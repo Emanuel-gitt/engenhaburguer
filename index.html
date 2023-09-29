@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>Lanchonete</title>
+</head>
+<body>
+    <div id="video-popup" class="popup">
+        <video id="video-popup-content" controls>
+            <source src="video_promocional4.mp4" type="video/mp4">
+            Seu navegador não suporta o elemento de vídeo.
+        </video>
+    </div>
+
+    <div class="background-image">
+        <div class="content">
+            <img src="logo.png" alt="Logo da Lanchonete" class="logo">
+        </div>
+        <div class="buttons">
+            <button class="menu-button" onclick="mostrarCardapio()">Cardápio</button>
+            <button id="btn-promocoes" class="menu-button">Promoções</button>
+            <button class="menu-button" onclick="mostrarFuncionamento()">Funcionamento</button>
+        </div>
+
+        <div id="funcionamento-popup" class="cardapio-popup">
+            <h2>Funcionamento</h2>
+            <p>Aberto de segunda a sábado das 19h às 24h.</p>
+            <button onclick="ocultarFuncionamento()">Fechar</button>
+        </div>        
+
+        <div id="cardapio-popup" class="cardapio-popup">
+
+            <h2>Cardápio</h2>
+                <h3>Hambúrgueres</h3>
+                <ul>
+                    <li>X-Tradicional: pão brioche, hambúrguer blend acém e cupim 120g, queijo prato, cebola caramelizada, maionese da casa, barbecue, alface, tomate e picles.....R$12,00</li>
+                    <li>X-Bacon: pão brioche, hambúrguer blend acém e cupim 120g, bacon, cebola caramelizada, maionese da casa, barbecue, alface, tomate e picles.....................R$13,00</li>
+                    <li>X-Frango: pão tradicional, Peito de frango (marinado) empanado, maionese temperada da casa alface, tomate e picles...............................................................R$11,00</li>
+                </ul>
+                
+                <h3>Acompanhamentos</h3>
+                <ul>
+                    <li>Batata frita...........................................................................................................................................................................................................................................R$6,00</li>
+                    <li>Frango frito..........................................................................................................................................................................................................................................R$7,00</li>
+                    <li>Polenta frita.........................................................................................................................................................................................................................................R$7,00</li>
+                </ul>
+                
+                <h3>Bebidas</h3>
+                <ul>
+                    <li>Fanta/Guarapan/Guarana/Pepsi/Coca Cola lata 200ml......................................................................................................................................................................R$3,00</li>
+                    <li>Fanta/Guarapan/Guarana/Pepsi/Coca Cola 2L..................................................................................................................................................................................R$6,50</li>
+                    <li>Suco de fruta sabores diversos 500ml................................................................................................................................................................................................R$4,00</li>
+                    <li>Suco de fruta com leite condençado e gelo 200ml..............................................................................................................................................................................R$3,00</li>
+                    <li>Água mineral com ou sem gás 150ml.................................................................................................................................................................................................R$1,50</li>
+                </ul>
+
+            <button onclick="ocultarCardapio()">Fechar</button>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
