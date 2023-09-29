@@ -110,8 +110,13 @@ body {
 @media (min-width: 1400px) {
     #video-popup-content {
         width: 70vw; 
+        
+        max-width: 300px; 
+        max-height: 200vh; 
+        
+        /*
         max-width: 150px; 
-        max-height: 100vh; 
+        max-height: 100vh; */
     }
 }
 
